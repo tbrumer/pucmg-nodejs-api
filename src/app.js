@@ -6,7 +6,7 @@ import cors from 'cors'
 import path from 'path'
 import fs from 'fs'
 
-const routerV1 = require('./api/routes/router-v1').default
+import routerV1 from './api/routes/router-v1'
 
 const port = process.env.PORT || 3000
 
