@@ -11,7 +11,7 @@ const options = {
     cert: fs.readFileSync('/etc/letsencrypt/live/pucmg.vps.webdock.cloud/fullchain.pem')
 };
 
-const port = process.env.PORT || 80
+const port = process.env.PORT || 3000
 
 const app = express()
 
