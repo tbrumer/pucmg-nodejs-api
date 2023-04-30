@@ -31,9 +31,9 @@ routerV1.put(endpoint + 'produtos/:id', function (req, res) {
     const product = getProductById(req.params.id)
 
     if (product) {
-        product.descricao = req.body.descricao
-        product.valor = req.body.valor
-        product.marca = req.body.marca
+        product.descricao = req.body.descricao || product.descricao
+        product.valor = req.body.valor || product.valor
+        product.marca = req.body.marca || product.marca
     }
 
     res.status(200).json(product)
