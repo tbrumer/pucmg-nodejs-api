@@ -6,7 +6,7 @@ import cors from 'cors'
 import path from 'path'
 import fs from 'fs'
 
-import routerV1 from './api/routes/router-v1'
+import routerV1 from './src/api/routes/router-v1'
 
 const port = process.env.PORT || 3000
 
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // paths
-app.use('/app', express.static(path.join(__dirname, '/public')))
+app.use('/app', express.static(path.join(__dirname, '/src/public')))
 app.use('/api', routerV1)
 
 if (process.env.ENVIRONMENT === "dev") {
