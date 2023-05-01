@@ -1,25 +1,25 @@
 # pucmg-nodejs-api
 
-# Exercício 1 - Montagem de uma API RESTful
+## **Exercício 1 - Montagem de uma API RESTful**
 
-O ambiente que vamos criar envolve as ferramentas listadas logo a seguir. Comece fazendo o download dos softwares necessários e instale na sua máquina (Há versões destes software para todos os sistemas operacionais: windows | linux | mac). A instalação é simplificada e não exige conhecimento prévio. Segue a lista com os respectivos links para download. 
+O ambiente que vamos criar envolve as ferramentas listadas logo a seguir. Comece fazendo o download dos softwares necessários e instale na sua máquina (Há versões destes software para todos os sistemas operacionais: windows | linux | mac). A instalação é simplificada e não exige conhecimento prévio. Segue a lista com os respectivos links para download.
 
 [git | Controle de Versão](https://git-scm.com/downloads)  
 [Visual Studio Code | Integrated Development Environment](https://code.visualstudio.com/download)  
 [Webdock | VPS Servers](https://icei.pucminas.br/index.php/webdock)  
 [Node.js | Plataforma de Desenvolvimento JavaScript](https://nodejs.org/pt-br/download)  
 
-Nessa tarefa, vamos montar uma API simplificada no padrão RESTful com o Node.js e o Express, tendo um array simples como estrutura de dados. 
+Nessa tarefa, vamos montar uma API simplificada no padrão RESTful com o Node.js e o Express, tendo um array simples como estrutura de dados.
 
 O ambiente que vamos precisar é criado a partir do Visual Studio Code (VSCode). Abra o VSCode e crie uma aplicação Node.js utilizando o NPM e crie um repositório de código com o git. Em seguida, crie uma conta gratuita em um servidor da sua preferência (recomendamos o WebdockLinks to an external site.), monte o servidor Node.JSLinks to an external site. e faça o deploy da aplicação para o ambiente criado.
 
 Você deverá submeter, além da URL um arquivo ZIP com o código do servidor criado por você.
 
-## Passo 1 – Criar a aplicação em Node.js para uma API Restful
+### **Passo 1 – Criar a aplicação em Node.js para uma API Restful**
 
 Monte uma API RESTful de CRUD tendo como estrutura de dados um objeto JSON, conforme apresentado no quadro 1.
 
-##### Quadro 1 – Estrutura de Dados de Produto
+#### Quadro 1 – Estrutura de Dados de Produto
 
     const lista_produtos = {
         produtos: [
@@ -41,6 +41,6 @@ A API deve apresentar a seguinte estrutura
 | Alterar um produto          | **U**PDATE          | **PUT** /produtos/:id    |
 | Excluir um produto          | **D**ELETE          | **DELETE** /produtos/:id |
 
-## Passo 2 - Entrega da atividade
+### **Passo 2 - Entrega da atividade**
 
 Publique o site em um ambiente na Internet. Entregue um arquivo ZIP com o código fonte e o link para sua aplicação no site publicado.

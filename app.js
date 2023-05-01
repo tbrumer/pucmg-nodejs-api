@@ -7,6 +7,7 @@ import path from 'path'
 import fs from 'fs'
 
 import routerV1 from './src/api/routes/router-v1'
+import routerV2 from './src/api/routes/router-v2'
 
 const port = process.env.PORT || 3000
 
@@ -18,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // paths
 app.use('/app', express.static(path.join(__dirname, '/src/public')))
-app.use('/api', routerV1)
+app.use('/api', routerV1, routerV2)
 
 if (process.env.ENVIRONMENT === "dev") {
     console.log("### DEVELOPMENT MODE ###")

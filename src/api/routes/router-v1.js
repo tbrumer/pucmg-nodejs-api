@@ -1,21 +1,21 @@
 import { Router } from 'express'
 
-import { produtos } from '../../database'
+import { produtos } from '../../static/database'
 
 const routerV1 = Router()
 const endpoint = '/v1/'
 
 let id = Math.max(...produtos.map(p => p.id))
 
-routerV1.get(endpoint + 'produtos', function (_req, res) {
+routerV1.get(endpoint + 'produtos', (_req, res) => {
     res.status(200).json(produtos)
 })
 
-routerV1.get(endpoint + 'produtos/:id', function (req, res) {
+routerV1.get(endpoint + 'produtos/:id', (req, res) => {
     res.status(200).json(getProductById(req.params.id))
 })
 
-routerV1.post(endpoint + 'produtos', function (req, res) {
+routerV1.post(endpoint + 'produtos', (req, res) => {
     const product = {
         id: ++id,
         descricao: req.body.descricao,
@@ -27,7 +27,7 @@ routerV1.post(endpoint + 'produtos', function (req, res) {
     res.status(201).json(product)
 })
 
-routerV1.put(endpoint + 'produtos/:id', function (req, res) {
+routerV1.put(endpoint + 'produtos/:id', (req, res) => {
     const product = getProductById(req.params.id)
 
     if (product) {
@@ -39,7 +39,7 @@ routerV1.put(endpoint + 'produtos/:id', function (req, res) {
     res.status(200).json(product)
 })
 
-routerV1.delete(endpoint + 'produtos/:id', function (req, res) {
+routerV1.delete(endpoint + 'produtos/:id', (req, res) => {
     const index = getProductIndexById(req.params.id)
 
     if (index >= 0) {
