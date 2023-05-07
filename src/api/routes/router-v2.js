@@ -43,7 +43,7 @@ routerV2.post(endpoint + 'cursos', (req, res) => {
         .insert({
             descricao: req.body.descricao,
             valor: req.body.valor,
-            marca: req.body.marca
+            categoria: req.body.categoria
         }, ['*'])
         .then(curso => { res.status(200).json(curso) })
         .catch(err => {
@@ -57,7 +57,7 @@ routerV2.put(endpoint + 'cursos/:id', (req, res) => {
         .update({
             descricao: req.body.descricao,
             valor: req.body.valor,
-            marca: req.body.marca
+            categoria: req.body.categoria
         }, ['*'])
         .then(cursos => {
             if (cursos && cursos.length)
