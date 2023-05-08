@@ -44,3 +44,17 @@ A API deve apresentar a seguinte estrutura
 ### **Passo 2 - Entrega da atividade**
 
 Publique o site em um ambiente na Internet. Entregue um arquivo ZIP com o código fonte e o link para sua aplicação no site publicado.
+
+## **Exercício 2 - Montagem da API RESTful com BD**
+
+Nessa tarefa, utilize o roteiro que vimos em sala de aula até o PASSO 2 e vamos montar uma API baseada em bancos de dados. 
+
+Você deve escolher um assunto diferente de produtos e montar uma API que forneça todos os recursos para realizarmos o CRUD, ou seja (CREATE | READ | UPDATE | DELETE). A assinatura dos métodos deve obedecer as boas práticas de uma API REST e utilizar os recursos do protocolo HTTP conforme já vimos, inclusive, no exercício anterior.
+
+Nesse exercício, o objetivo é fornecer a API inicial com a estrutura de banco de dados. Para isso, sugerimos a utilização do módulo Knex, cuja interface pode ser vista no material desse assunto.
+
+A entrega deste exercício é composta por:
+
+- arquivo zip com o código gerado
+- link para o site publicado na Internet.
+- detalhes dos endpoints de acesso nos comentários da entrega
