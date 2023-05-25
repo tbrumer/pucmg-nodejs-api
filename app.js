@@ -27,8 +27,8 @@ if (process.env.ENVIRONMENT === "dev") {
 } else {
     console.log("### PRODUCTION MODE ###")
     const options = {
-        // key: fs.readFileSync('/etc/letsencrypt/live/pucmg.vps.webdock.cloud/privkey.pem'),
-        // cert: fs.readFileSync('/etc/letsencrypt/live/pucmg.vps.webdock.cloud/fullchain.pem')
+        key: fs.readFileSync('/etc/letsencrypt/live/pucmg.vps.webdock.cloud/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/pucmg.vps.webdock.cloud/fullchain.pem')
     };
 
     https.createServer(options, app).listen(port)
